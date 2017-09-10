@@ -30,6 +30,7 @@ public class Controller {
             if(object.getNIM().equals(NIM)){
                 already_exists = true;
                 JOptionPane.showMessageDialog(null, "Data sudah tersedia", "Warning", JOptionPane.WARNING_MESSAGE);
+                break;
             }
         }
         
@@ -62,7 +63,7 @@ public class Controller {
     
     public ArrayList<Mahasiswa> getALL(){
         return listMahasiswa;
-    }
+    }   
     
     public void deleteData(int index){
         listMahasiswa.remove(index);

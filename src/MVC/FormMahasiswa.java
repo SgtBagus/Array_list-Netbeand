@@ -40,7 +40,7 @@ public class FormMahasiswa extends javax.swing.JFrame {
                 mhs.getNama(),
                 mhs.getJurusan()
             };
-            objeckmahasiswa[1] = arraymahasiswa;
+            objeckmahasiswa[i] = arraymahasiswa;
             i++;
         }
         modelmahasiswa = new DefaultTableModel(objeckmahasiswa, namakolom);
@@ -60,7 +60,7 @@ public class FormMahasiswa extends javax.swing.JFrame {
                 nm.getNM(),
                 nm.getKet()
             };
-            objeknilai[1] = arraynilai;
+            objeknilai[i] = arraynilai;
             i++;
         }
         modelnilai = new DefaultTableModel(objeknilai, namakolom);
@@ -71,6 +71,7 @@ public class FormMahasiswa extends javax.swing.JFrame {
         txtNim.setText("");
         txtNama.setText("");
         txtJurusan.setText("");
+        txtTugas.setText("");
         txtUAS.setText("");
         txtUTS.setText("");
         txtNA.setText("");
@@ -451,7 +452,6 @@ public class FormMahasiswa extends javax.swing.JFrame {
         viewDataTabel();
         viewDataTabel2();
         ClearTextField();
-
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
