@@ -4,19 +4,19 @@
  * and open the template in the editor.
  */
 
-package arraylist_bagus;
+package MVC;
 
 /**
  *
  * @author Toshiba
  */
-public class Arraylist_Bagus {
-
+public class MainMVC {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) {    
         // TODO code application logic here
+        new FormMahasiswa().setVisible(true);
     }
     
 }

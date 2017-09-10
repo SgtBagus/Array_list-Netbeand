@@ -68,7 +68,7 @@ public class Controller {
         listMahasiswa.remove(index);
     }
     
-    public ArrayList<Nilai> getAll2() {
+    public ArrayList<Nilai> getALL2() {
         return listNilai;
     }
     
