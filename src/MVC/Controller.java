@@ -18,6 +18,7 @@ public class Controller {
     ArrayList<Mahasiswa> listMahasiswa;
     ArrayList<Nilai> listNilai;
     
+    
     public Controller(){
         listMahasiswa = new ArrayList();
         listNilai = new ArrayList();
@@ -65,6 +66,23 @@ public class Controller {
         return listMahasiswa;
     }   
     
+    
+    public void updateData(int index,String Tugas, String UTS, String UAS, String NA, String NM, String Ket)
+    {
+//           Barang brg = new Barang();
+        Nilai nl = new Nilai(Tugas, UTS, UAS, NA, NM, Ket);
+        listNilai.set(index, nl);
+//        fireTableRowsUpdated(index, index);
+        
+    }
+    
+    public void updateDataMahasiswa(int index, String NIM, String Nama, String Jurusan){
+        Mahasiswa mhs = new Mahasiswa(NIM, Nama, Jurusan);
+        listMahasiswa.set(index, mhs);
+//        fireTableRowsUpdated(index, index);
+        
+    }
+    
     public void deleteData(int index){
         listMahasiswa.remove(index);
     }
@@ -76,4 +94,5 @@ public class Controller {
     public void deleteData2(int index){
         listNilai.remove(index);
     }
+
 }
