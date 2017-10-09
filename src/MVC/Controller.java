@@ -13,7 +13,14 @@ import MVC.Mahasiswa;
 /**
  *
  * @author Toshiba
+ * 
+ * 
+ * RIKO DAN KHARISMA SUKA CUMA COPAS 
+ * 
+ * 
  */
+
+
 public class Controller {
     ArrayList<Mahasiswa> listMahasiswa;
     ArrayList<Nilai> listNilai;
